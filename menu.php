@@ -8,6 +8,7 @@
                         <li><a href="exercicio.php?dir=API&file=ler_arquivo">Lendo Arquivos</a></li>
                         <li><a href="exercicio.php?dir=API&file=upload">Upload</a></li>
                         <li><a href="exercicio.php?dir=API&file=download">Download </a></li>
+                        <li><a href="exercicio.php?dir=API&file=imagens">Desafio Imagem</a></li>
                         
                     </ul>
                 </div>

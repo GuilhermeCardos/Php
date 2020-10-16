@@ -1,7 +1,8 @@
-<div class="titulo">Download de Arquivos</div>
+<div class="titulo">Desafio Imagens</div>
 <?php
     session_start();
     error_reporting(0);
+
     $arquivos = $_SESSION['arquivos'] ?? [];
 
     $pastaUpload = __DIR__.'/../files/';
@@ -13,7 +14,7 @@
         $arquivos[] = $nomeArquivo;
         $_SESSION['arquivos'] = $arquivos;
     }else{
-        echo "<br>Erro no Upload de arquivo!";
+        echo "<br> Erro no Upload de arquivo!";
     }
 
 
@@ -26,11 +27,11 @@
 
 <ul>
     <?php foreach($arquivos as $arquivo): ?>
-        <li>
-            <a href="php/../files/<?= $arquivo ?>" Download>
-                <?= $arquivo ?>
-            </a>
-        </li>
+        <?php if(stripos($arquivo, '.jpg') > 0): ?>
+            <li>
+                <img src="php/../files/<?= $arquivo ?>" height="120">  
+            </li>
+        <?php endif?>
     <?php endforeach?>
 </ul>
 
