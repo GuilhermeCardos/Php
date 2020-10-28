@@ -14,7 +14,7 @@
             ],
             [
                 "nome" =>  "KAROL CARDOSO",
-                "email" => "karollinny.cardoso@gmail.com",
+                "email" => "karollinny.latavanha@gmail.com",
                 "senha" => "karol",
             ],
             [
